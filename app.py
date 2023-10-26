@@ -13,5 +13,4 @@ def index():
     """ Display gibberish text """
     length = 2000
     text = random_string(length)
-    print(text)
     return render_template("index.html", text=text)
