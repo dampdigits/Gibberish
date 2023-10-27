@@ -9,6 +9,14 @@
     </head>
     <body>
         <div class="container">
+            <h1 class="mt-5 text-center">Gibberish Library</h1>
+            <hr>
+            <form action="/" method="post" class="py-5">
+                <input type="text" name="page">
+                <button type="submit">
+                    Go to page
+                </button>
+            </form>
             {% block body %}{% endblock %}
         </div>
     </body>
