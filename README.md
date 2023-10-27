@@ -1,2 +1,2 @@
 # web-apps
-Web-apps created in CS50
+A library of gibberish texts.
