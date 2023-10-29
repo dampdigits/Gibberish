@@ -15,7 +15,10 @@ def index():
     page = 0
 
     if request.method == "POST":
-        page = request.form.get("page")
+        page = int(request.form.get("page")) # type: ignore
+        if page < 0:
+            return render_template("index.html", text="Invalid page number.")
+
     random.seed(page)
     length = 2000
     text = random_string(length)
